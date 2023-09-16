@@ -1,0 +1,16 @@
+---
+name: Test install-github-release-binary
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: EricCrosson/install-github-release-binary@v2
+        with:
+          targets: semantic-release-action/test-install-single-binary@v1
+
+      - run: which test-install-single-binary
+
+      - run: test-install-single-binary
