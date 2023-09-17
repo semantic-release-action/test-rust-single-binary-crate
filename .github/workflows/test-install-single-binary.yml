@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install semantic-release-action/test-rust-single-binary-crate
-        uses: EricCrosson/install-github-release-binary@v2
+        uses: EricCrosson/install-github-release-binary@beta
         with:
           targets: semantic-release-action/test-rust-single-binary-crate@v1
 
